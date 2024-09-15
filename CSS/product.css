@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:black;
+}
+
+h2{
+    font-size: 40px;
+    color:black;
+}
+
+h3{
+    font-size: 55px;
+    color: black;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p{
+    font-size: 16px;
+    margin: 10px;
+    color: #465b46;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 5px;
+    color: rgb(255, 255, 255);
+    background-color: #9cd499;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+body{
+    width: 100%;
+    background-color: rgb(250, 245, 245);
+}
+
+
+
+
+/*------------------------------------------Navigation bar-------------------------------------------------*/
+
+#header{ /*creates gap between logo and navigation buttons and adds background color in navigation bar*/
+    display: flex;
+    width: 100%;
+    position: fixed;
+    transition: 1s ease-in-out ;
+    top: 0;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 1000000;
+    padding: 20px 70px ;
+    /*background:#b8d5cd ;*/
+    background-color: #97daae;
+    box-shadow: 0px 9px 20px whitesmoke;
+}
+
+#navbar{/*puts the navigation button in a horizontal line and creats gap between them*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li{/*removes listing type on the links and creates gap between the navigation button*/
+    list-style-type:none;
+    padding: 0 12px;
+    position: relative;
+}
+
+#navbar li a{/*removes decoration on link and adds ease transition to the nav buttons*/
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #61876E;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    display: block;
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: #61876E;
+    position: absolute;
+    bottom: 0px;
+    left: 13px;
+}
+
+
+/*-------------------------------------------product-------------------------------------------------*/
+#all-product{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#all-product h2{
+    font-size: 60px;
+    text-shadow: 0px 1px 2px #bdc5b9;
+}
+
+#all-product p{
+    font-size: 20px;
+    color: #bdc5b9;
+}
+
+#all-product .fp-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px
+}
+
+#all-product .fp-container .fp-box {
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#all-product .fp-container .fp-box{
+    padding: 10px 0px 10px 15px;
+    box-shadow:4px 4px 8px  rgb(127, 131, 127);
+    border: 1px solid rgb(190, 186, 186);
+    transition: .25s linear;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 350px;
+    min-height: 350px;
+    min-width: 250px;
+    width: 18%;
+    background-color: white;
+}
+
+#all-product .fp-container .fp-box:hover{
+    box-shadow:5px 10px 30px rgb(127, 131, 127);
+    width: 19%;
+    height: 360px;
+    text-align: center;
+    justify-content: flex-start;
+    border: 1px solid rgb(190, 186, 186);
+    
+}
+
+#all-product .fp-container .fp-box .product{
+    background-color: rgb(250, 245, 245);
+    border-radius: 4px;
+    align-items: center;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#all-product .fp-container .fp-box img{
+    height: 200px;
+    min-height: 200px;
+}
+
+#all-product .fp-container .fp-box .desc{
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#all-product .fp-container .fp-box .desc h5{
+
+    color: rgb(58, 55, 55);
+    font-size: 14px;
+}
+
+#all-product .fp-container .fp-box h4{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 7px;
+    color: #088178;
+    padding-bottom: 10px;
+}
+
+#all-product .fp-box .discount{
+    justify-content: center;
+}
+#all-product .fp-box .discount h5{
+    font-size: 16px;
+}
+
+#all-product .fp-container .fp-box .discount h4{
+    padding-bottom: 2px;
+}
+
+#all-product .fp-container .fp-box .discount .old-price{
+    color: #818288;
+}
+#all-product .fp-container .fp-box .discount .old-price{
+    padding-bottom: 10px;
+}
+
+#all-product .fp-container .fp-box button{
+    display: inline-block;
+    padding: 9px;
+    line-height: 1;
+    background-color:rgb(124, 204, 153);
+    font-weight: 800;
+    block-size: auto;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#all-product .fp-container .fp-box button:hover{
+    background-color: #818288;
+}
+
+
+/*-------------------------------------------------------footer-------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #97daae;
+}
+
+footer .logo{
+    margin-top: 38px;
+    width:300px
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 16px ;
+}
+
+footer a{
+    font-size: 16px ;
+    text-decoration: none;
+    color: #465b46;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Name" content="Bonsai Kōjō">   
+    <meta name="descirption" content="Homepage">
+    <meta name="keywords" content="HTML,CSS,JS,Bonsai,plants">
+    <meta name="author" content="Weejan Maharjan 22068187">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Kōjō</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <style>
+        #page-info .i-container .i-box .i-desc h5{
+            font-size:18px;
+        }
+        #page-info .i-container .i-box .i-name h4{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!----------------------------------------------- Header---------------------------------------------------->
+    <header id="header">
+        <!----------------navbar logo-------------------->
+        <a href="index.html"><img src="image/logo/Bonsai Kōjō-1 (2).png" alt="" width="70%"></a>
+        <div>
+            <ul id="navbar"><!----------------navbar buttons-------------------->
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="HTML/products.html">Products</a></li>
+                <li><a href="HTML/blog.html">Blog</a></li>
+                <li><a href="HTML/research.html">Research</a></li>
+                <li><a href="HTML/AboutUs.html">About&nbsp;us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----------------------------------------------- Header ends---------------------------------------------------->
+
+
+<!----------------------------------------------- Slideshow---------------------------------------------------->
+    <section class="slide-body">
+        <section style= "margin-top: 116px;" class="slideshow">
+        <div class="slides"><!----------------radio buttons for slider -------------------->
+                <input type="radio" name="radio-btn" class="btns" id="radio1">
+                <input type="radio" name="radio-btn" class="btns" id="radio2">
+                <input type="radio" name="radio-btn" class="btns" id="radio3">
+                <input type="radio" name="radio-btn" class="btns" id="radio4">
+            
+                <!----------------images for slideshow -------------------->
+            <div class="slide first ">
+                <img src="image/slideshow/p4.png"  alt="Slideshow image 1">
+            </div>
+            <div class="slide">
+                <img src="image/slideshow/p3.png"  alt="Slideshow image 2">
+            </div>
+            <div class="slide">
+                <img src="image/slideshow/p2.png"  alt="Slideshow image 3">
+            </div>
+            <div class="slide">
+                <img src="image/slideshow/p1.png"  alt="Slideshow image 4">
+            </div>
+        </div>
+        <!----------------label for slideshow radio button -------------------->
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        </section>
+    </section>
+    
+<!----------------------------------------------- Slideshow ends---------------------------------------------------->
+
+
+<!----------------------------------------------- Features---------------------------------------------------->
+    <section id="features" class="section-p1"> 
+        <!----------------feature boxs with text and image-------------------->
+        <div class="feature-box">
+            <img src="image/features/fast delivery-1.png" alt="">
+            <h6>Fast Delivery</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="image/features/save money-1.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="image/features/online shopping-1.png" alt="">
+            <h6>Online Shopping</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="image/features/happy customer-1.png" alt="">
+            <h6>Happy customer</h6>
+        </div>
+    </section>
+<!----------------------------------------------- Features ends---------------------------------------------------->
+
+
+<!----------------------------------------------- Featured products---------------------------------------------------->
+    <section id="feature-product" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Popular Among People</p>
+        <div class="fp-container"><!----------------row of featured products-------------------->
+            <div class="fp-box"><!----------------product container-------------------->
+                <div class="product">
+                    <img src="image/featured product/1Japanese_Cypress.png" alt="">
+                </div>
+                <div class="desc">
+                    <a href="HTML/JapaneseCypress.html" style="text-decoration: none"> 
+                        <h5>Japanese Cypress Bonsai</h5>
+                    </a>
+                </div>
+                <h4>$195</h4>
+                <div class="button">
+                    <button class=""button onclick="addcart()"><b>Add To Cart</b></button>
+                    <script>
+                        function addcart() {
+                            alert("Product added to cart");
+                        }
+                    </script>
+                </div>
+            </div>
+            
+            <div class="fp-box">
+                <div class="product">
+                    <img src="image/featured product/2Japanese_Zelkova.png" alt="">
+                </div>
+                <div class="desc">
+                    <a href="HTML/JapaneseZelkova.html" style="text-decoration: none">
+                        <h5>Japanese Zelkova Bonsai</h5>
+                    </a>
+                </div>
+                <h4>$240</h4>
+                <div class="button">
+                    <button class=""button onclick="addcart()"><b>Add To Cart</b></button>
+                    <script>
+                        function addcart() {
+                            alert("Product added to cart");
+                        }
+                    </script>
+                </div>
+            </div>
+    
+            <div class="fp-box">
+                <div class="product">
+                    <img src="image/featured product/3Japanese_Maple.png" alt="">
+                </div>
+                <div class="desc">
+                    <a href="HTML/JapaneseMaple.html"style="text-decoration: none">
+                        <h5>Japanese Maple Bonsai</h5>
+                    </a>
+                </div>
+                <div class="discount">
+                    <div class="new-price">
+                        <h4>$1900</h4>
+                    </div>
+                        <div class="old-price">
+                        <h5 style="text-decoration: line-through;">$2000</h5>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class=""button onclick="addcart()"><b>Add To Cart</b></button>
+                    <script>
+                        function addcart() {
+                            alert("Product added to cart");
+                        }
+                    </script>
+                </div>
+            </div>
+    
+            <div class="fp-box">
+                <div class="product">
+                    <img src="image/featured product/4Juniper_Bonsai.png" alt="">
+                </div>
+                <div class="desc">
+                    <a href="HTML/JuniperBonsai.html" style="text-decoration: none">
+                        <h5>Juniper Bonsai</h5>
+                    </a>
+                </div>
+                <div class="discount">
+                    <div class="new-price">
+                        <h4>$190</h4>
+
+                <div class="button">
+                    <button class=""button onclick="addcart()"><b>Add To Cart</b></button>
+                    <script>
+                        function addcart() {
+                            alert("Product added to cart");
+                        }
+                    </script>
+                </div>
+            </div>
+
+    </section>
+<!----------------------------------------------- Featured products ends---------------------------------------------------->
+
+
+
+<!----------------------------------------------- Offer-Banner---------------------------------------------------->
+    <section id="banner" class="section-m1" style="background-image: url(image/banner/wallpaperflare-cropped\ \(1\).jpg);">
+        <h4 style="font-size: 28px;">For New Customer</h4>
+        <h3>Up to <span>75% Off</span> - All products - On your First Purchase</h3>
+        <button class="banner"><a href="HTML/products.html" style="text-decoration: none">Shop Now</a></button>
+    </section>
+<!----------------------------------------------- Offer-Banner ends---------------------------------------------------->
+
+
+<!----------------------------------------------------Page Info--------------------------------------------------------->
+
+    <section id="page-info" class="section-p1">
+    <h2>Webpage Information</h2>
+    <p>Short descirption about the webpages</p>
+    <div class="i-container">
+        <div class="i-box"><!----------------boxes with page infos-------------------->
+            <div class="i-name">
+                <h4 style="padding-top: 30px;">Products</h4>
+            </div>
+            <div class="i-desc">
+                <h5>Product page contains information about variety of Bonsai plant which you can browse and buy which is in your best interest.</h5>
+            </div>
+            <button class="normal"><a href="HTML/products.html">Go To</a></button>
+        </div>
+
+        <div class="i-box">
+            <div class="i-name">
+                <h4 style="padding-top: 30px;" >Blog</h4>
+            </div>
+            <div class="i-desc">
+                <h5>Blog page contains a illustration about how technology has changed our daily life and business,
+                        including its positive and negative impacts. This page includes how technology has helped while selling our bonsai plants and lastly, conclusion.</h5>
+            </div>
+            <button class="normal"><a href="HTML/blog.html">Go To</a></button>
+        </div>
+
+        <div class="i-box">
+            <div class="i-name">
+                <h4 style="padding-top: 30px;" >Research</h4>
+            </div>
+            <div class="i-desc">
+                <h5>Research page portrays the differences and similarities between this website and website from which references has been taken for research purpose. </h5>
+            </div>
+            <button class="normal"><a href="HTML/research.html">Go To</a></button>
+        </div>
+
+        <div class="i-box">
+            <div class="i-name">
+                <h4 style="padding-top: 30px;" >About us</h4>
+            </div>
+            <div class="i-desc">
+                <h5>About Us section consists the detailed Portoflio of each team member of the group. It also includes a feedback form which you can use to 
+                    give critique about our website.
+                </h5>
+            </div>
+            <button class="normal"><a href="HTML/AboutUs.html">Go To</a></button>
+        </div>
+    </div>
+    </section>
+<!----------------------------------------------------Page Info ends--------------------------------------------------------->
+
+<!----------------------------------------------- Footer---------------------------------------------------->
+    <footer class="section-p1">
+        <div class="col"><!----------------columns with logo-------------------->
+            <img src="image/logo/Bonsai Kōjō-1 (2).png" class="logo" alt="">
+        </div>
+
+        <div class="col"><!----------------columns with contact info-------------------->
+            <h4>Contacts</h4>
+            <p><b>Address:</b> <span>Kamal Pokhari, Kathmandu</span></p>
+            <p><b>Phone:</b> <span>+977 9851739281</span></p>
+            <p><b>Email:</b> <span>bonsaikōjōl1c5@gmail.com</span></p>
+        </div>
+
+        <div class="col"><!----------------columns of about us-------------------->
+            <h4>About us</h4>
+            <p><a href="HTML/AboutUs.html">Portoflio</a></p>
+            <p><a href="HTML/form.html">Feedback Form</a></p>
+        </div>
+
+        <div class="copyright"><!----------------copyright tag-------------------->
+            <p>&#169; 2023, Bonsai Kōjō </p>
+        </div>
+    </footer>
+<!----------------------------------------------- Footer ends---------------------------------------------------->
+    <script src="JAVASCRIPT/script.js"></script>
+</body>
+</html>

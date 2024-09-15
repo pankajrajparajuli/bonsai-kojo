@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="descirption" content="researchpage" />
+    <meta name="keywords" content="HTML,CSS,JS,Bonsai,plants" />
+    <meta name="author" content="Abhi Thakur 22067671" />
+    <title>Feedback Form</title>
+    <style>
+         *{
+            font-family: 'Spartan',sans-serif;     /*sets the font to Spartan',sans-serif*/
+        }
+        form {
+width: 500px;                                     /*sets the width of the form to 500px*/
+margin: 50px auto;                                /*sets the margin 50px for top and bottom and automatically calculates for left and right*/
+padding: 20px;                                    /*sets the padding to 20px*/
+background-color: rgb(245, 190, 190);           /*Sets the background color*/
+border: 1px solid white;                        /*sets the border*/
+}
+
+label {
+font-size: 15px;                                       /*sets font size to 15px*/
+display: block;                                        /*sets display to block*/
+margin-bottom: 10px;                                   /*sets bottom margin to 10px*/
+}
+
+input[type="text"], select {
+width: 100%;                                       /*sets the width of the form to 100%*/
+padding: 12px 20px;                                /*sets the padding to 12px for top and bottom and 20px for left and right*/
+margin-bottom: 20px;                               /*sets bottom margin to 20px*/
+box-sizing: border-box;                            /*sets a box-size of border-box*/
+border: 2px solid whitesmoke;                    /*sets the border*/
+border-radius: 4px;                                /*sets border radius to 4px*/
+font-size: 16px;                                   /*sets font size to 16px*/
+}
+input[type="email"], select {
+width: 100%;                                        /*sets the width of the form to 100%*/
+padding: 12px 20px;                                 /*sets the padding to 12px for top and bottom and 20px for left and right*/
+margin-bottom: 20px;                                /*sets bottom margin to 20px*/
+box-sizing: border-box;                             /*sets a box-size of border-box*/
+border: 2px solid whitesmoke;                     /*sets the border*/
+border-radius: 4px;                                 /*sets border radius to 4px*/
+font-size: 16px;                                    /*sets font size to 16px*/
+}
+
+
+button[type="submit"] {
+width: 100%;                                         /*sets the width of the form to 100%*/
+background-color: rgb(35, 181, 35);                /*sets the color of submit button*/
+color: white;                                      /*sets the background color to white*/
+padding: 14px 20px;                                  /*sets the padding to 14px for top and bottom and 20px for left and right*/
+margin-top: 20px;                                    /*sets top margin to 20px*/
+border: none;                                        /*removes any border*/
+border-radius: 4px;                                  /*sets border radius to 4px*/
+cursor: pointer;                                     /*sets cursor to pointer when hovering over the button*/
+font-size: 16px;                                     /*sets font size to 16px*/
+}
+button[type="reset"] {
+width: 100%;                                         /*sets the width of the form to 100%*/
+background-color: rgb(241, 95, 95);                             /*sets the color of reset button*/
+color: white;                                      /*sets the background color to white*/
+padding: 14px 20px;                                  /*sets the padding to 14px for top and bottom and 20px for left and right*/
+margin-top: 20px;                                    /*sets top margin to 20px*/
+border: none;                                        /*removes any border*/
+border-radius: 4px;                                  /*sets border radius to 4px*/
+cursor: pointer;                                     /*sets cursor to pointer when hovering over the button*/
+font-size: 16px;                                     /*sets font size to 16px*/
+}
+
+button[type="button"]{
+    width: 100%;                                         /*sets the width of the form to 100%*/
+    background-color: rgb(8, 8, 8);                             /*sets the color of reset button*/
+    color: white;                                      /*sets the background color to white*/
+    padding: 14px 20px;                                  /*sets the padding to 14px for top and bottom and 20px for left and right*/
+    margin-top: 20px;                                    /*sets top margin to 20px*/
+    border: none;                                        /*removes any border*/
+    border-radius: 4px;                                  /*sets border radius to 4px*/
+    cursor: pointer;                                     /*sets cursor to pointer when hovering over the button*/
+    font-size: 16px;                                     /*sets font size to 16px*/
+}
+
+button[type="submit"]:hover {
+background-color: rgb(35, 181, 35);                 /*sets the button's background color*/
+}
+
+button[type="reset"]:hover {
+background-color:red ;                               /*sets the button's background color*/
+}
+    </style>
+    <title>Form Validation</title>
+
+    <script type="text/javascript">
+    function formvalidaton() {
+        let a = document.forms["feedback-form"]["name"].value;
+        if (a == "") {
+        alert("Name must be filled out");
+        return false;
+        }
+        let b = document.forms["feedback-form"]["email"].value;
+        if (b == "") {
+        alert("Email must be filled out");
+        return false;
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <form name="feedback-form" onsubmit="return formvalidaton()">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" /> <br />
+
+    <!-- </form> -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" /> <br />
+
+    <label for="rating">How would you rate your overall expericence with our website out of 5?</label>
+    <select id="rating" name="rating"> <!--requires to select a option-->
+        <option value="">Select</option>
+        <option value="1">1</option>        <!--set option value to 1-->
+        <option value="2">2</option>        <!--set option value to 2-->
+        <option value="3">3</option>        <!--set option value to 3-->
+        <option value="4">4</option>        <!--set option value to 4-->
+        <option value="5">5</option>        <!--set option value to 5-->
+    </select><br />
+
+    <label for="satisfaction">How satisfied were you with the website's loading speed?</label>
+    <select id="satisfaction" name="satisfaction">
+        <option value="">Select</option>
+        <option value="Very satisfied">Amazing</option>   <!--set option value to Amazing-->
+        <option value="satisfaction">Delighted</option>    <!--set option value to Delighted-->
+        <option value="Kinda satisfied">Satisfied</option>  <!--set option value to Satisfied-->
+        <option value="Not satisfied">Not Satisfied</option> <!--set option value to Not Satisfied-->
+        <option value="not satisfied at all">Not Satisfied at all</option>  <!--set option value to Not Satisfied at all-->
+    </select> <br />
+
+    <label for="issues">Were there any issues or problems that you faced while using our website?</label>
+            <input type="text" id="issues" name="issues" /> <br />  <!--input type text is required to answer the question-->
+        </div>
+        <div>
+            <label for="Comments">What could we do to improve you experience on our website?</label>
+            <input type="text" id="Comments" name="Comments" /> <br />  <!--input type text is required to answer the question-->
+        </div>
+        <div>
+            <label for="recommend">How likely are you to recommend our website to your family and friends?</label>
+            <input type="text" id="recommend" name="recommend" /> <br />  <!--input type text is required to answer the question-->
+        </div>
+        <div>
+            <label for="like">What did you like most about our website?</label>
+            <input type="text" id="like" name="like" /> <br />      <!--input type text is required to answer the question-->
+        </div>
+        <div>
+            <label for="dislike">What did you dislike about our website?</label>
+            <input type="text" id="dislike" name="dislike" /> <br />   <!--input type text is required to answer the question-->
+        </div>
+        <div>
+        <button type="submit">Submit</button>      <!--creates a submit button -->
+        <button type="reset">Reset</button>        <!--creates a reset button -->
+        <button type="button"><a href="../index.html" style="text-decoration: none; color: white;" >Go Back</a></button> 
+        </div>
+    </form>
+</body>
+</html>

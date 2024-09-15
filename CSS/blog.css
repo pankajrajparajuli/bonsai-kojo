@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan',sans-serif;
+}
+body {
+    line-height: 1.4;
+    color: var(--dark);
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin-top: 120px;
+    
+}
+
+/* header */
+.bg{
+    margin-top: 100px;
+    min-height: 710px;
+    background-image: url("../image/BlogPage/tech.jpg") ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+#header{ 
+    display: flex;
+    width: 95%;
+    position: fixed;
+    transition : 1s ease-in-out ;
+    top: 0;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 1000000;
+    padding: 10px 70px ;
+    background:#b8d5cd ;
+    background-color: #97daae;
+    box-shadow: 0px 9px 20px whitesmoke;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li{
+    list-style-type:none;
+    padding: 0 12px;
+    position: relative;
+}
+
+#navbar li a{
+    font-family: 'Spartan',sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #61876E;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    display: block;
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: #61876E;
+    position: absolute;
+    bottom: 0px;
+    left: 13px;
+}
+
+
+.banner1{
+    flex: 1;
+    display: flex;
+    text-align: center;
+    color: #ffff;
+    justify-content: center;
+    align-items:center;
+}
+.banner_title{
+    font-size:4 px;
+    line-height: 1.2;
+    color: rgba(126, 76, 76, 0.696);
+}
+.banner_title span{
+    color: rgb(112, 94, 103);
+    font-family: 'Karma', serif;
+
+}
+.banner1 form{
+    background: #ffff;
+    border-radius: 50px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner1 p {
+    text-transform: capitalize;
+    font-family: 'Karma', serif;
+    font-weight: 900;
+    word-spacing: 2px;
+    padding: 16px 0 32px 0;
+    font-size: large;
+    color: rgba(82, 112, 132, 0.804);
+}
+
+.search_input{
+font-size: 17px;
+width: 100%;
+outline: 0;
+padding: 9.6px 0;
+border: none;
+}
+.all_topics{
+    margin: 0;
+    padding: 10px;
+    background-color: lightgrey;
+}
+.all_topics h1{
+margin: 10px;
+padding: 5PX;
+font-size: 50px;
+} 
+
+.topic h2 p {
+    margin: 4px;
+    font-size: 40px;
+}
+
+.topic{
+    background-color: #f1f1f1;
+    padding: 48px;
+}
+
+body{
+    background-color: #f1f1f1;
+	font: Arial;
+	padding:0px ;
+}
+.row{
+	display: flex;
+}
+		
+.left_column{
+	flex: 57%;
+	background-color: grey;
+}
+.right_column{
+	flex: 43%;
+	background-color: grey;
+}
+.card{
+	background-color: white;
+	margin: 10px;
+    height: 450px
+	
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #97daae;
+    padding-top: 30px;
+}
+
+footer .logo{
+    margin-top: 38px;
+    width:300px
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+footer p{
+    font-size: 16px ;
+    margin: 10px;
+    color: #465b46;
+}
+
+footer a{
+    font-size: 16px ;
+    text-decoration: none;
+    color: #465b46;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.right_column .card {
+    height: 450px;
+}
+.logo1 {
+    width: 30px;
+    height: 30px;
+}

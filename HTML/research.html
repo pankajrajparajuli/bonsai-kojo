@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="descirption" content="researchpage" />
+    <meta name="keywords" content="HTML,CSS,JS,Bonsai,plants" />
+    <meta name="author" content="Abhi Thakur 22067671" />
+    <title>Research</title>
+    <style>
+        *{
+            font-family: 'Spartan',sans-serif;/*sets the font to Spartan',sans-serif*/
+            padding: 0;
+            margin: 0;
+        }
+        .image-container {          /*CSS is used to style class image-container*/
+        display: flex;              /*sets display to flex to create a flex container*/
+        flex-wrap: wrap;            /*within the container the flex wrap is set to wrap*/
+        justify-content: center;    /*justify content is set to center*/
+        align-items: center;        /*align items is set to center */
+        margin: 20px 0;             /*margin is set to 20px on the top and bottom of the element*/
+        padding: 10px;
+        }
+    .image {
+    width: 700px;                   /*sets the width of image to 700px*/
+    height: 250px;                  /*sets the height of the image to 250px*/
+    margin: 10px;                   /*sets the margin to 10px*/
+    }
+
+    .text {
+    text-align: center;              /*aligns the text to center*/
+    margin: 20px 100px;              /*sets margin to 20px on the top and the bottom and 0px for left and right*/
+    }
+
+    p{
+        font-size: 18px ;
+        margin: 20px;
+        color: #465b46;
+    }
+
+    h2{
+        font-size: 40px;
+        padding: 20px;
+        color: #97daae;
+    }
+
+    #header{ 
+    display: flex;
+    width: 95%;
+    position: fixed;
+    transition: 1s ease-in-out ;
+    top: 0;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 1000000;
+    padding: 20px 70px ;
+    background:#b8d5cd ;
+    background-color: #97daae;
+    box-shadow: 0px 9px 20px whitesmoke;
+    opacity: 1;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li{
+    list-style-type:none;
+    padding: 0 12px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #61876E;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    display: block;
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: #61876E;
+    position: absolute;
+    bottom: 0px;
+    left: 13px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #97daae;
+    padding-top: 30px;
+}
+
+footer .logo{
+    margin-top: 38px;
+    width:300px
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+footer p{
+    font-size: 16px ;
+    margin: 10px;
+    color: #465b46;
+}
+
+footer a{
+    font-size: 16px ;
+    text-decoration: none;
+    color: #465b46;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+    </style>
+    </head>
+
+    <body>
+    <header id="header">
+        <a href="../index.html"><img src="../image/logo/Bonsai Kōjō-1 (2).png" alt="" width="70%"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="research.html">Research</a></li>
+                <li><a href="aboutus.html">About&nbsp;us</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    
+    <center> <h2 style="margin-top: 150px;">Reference 1</h2>  </body></center>                                                   <!--add a heading at the center with margin top of 150p and  same thing is repeated below-->                                                            
+    <div class="image-container">                                                                                                <!--image container containing two image is created and  same thing is repeated below -->
+        <a href="https://www.bonsaiempire.com/"> <img class="image" src="../image/Research/2023-02-02 (2).png" alt="image1"></a> <!--image is inserted to and is also linked to a website and  same thing is repeated below-->
+        <img class="image" src="../image/Research/image2.png" alt="image2">
+    </div>
+    <p class="text">Here for the for the first refernce, we have chosen bonsaiempire's homepage "The living art of bonsai." Both pages have similar design. On the bonsaiempire homepage, it has described briefly about its other pages. We took it as a refernce and designed a similar containers that briefly describe about our other pages. We also added a "Go To" button that will redirect you to the selected page. </p> <!--Description is added to p tag -->
+
+    <center> <h2>Reference 2</h2></center>
+    <div class="image-container">                                                                                                                                                                                                                                
+        <a href="https://www.allthingsbonsai.co.uk/product/korean-hornbeam-bonsai-tree-number-60y/"> <img class="image" src="../image/Research/Image 3.png" alt="image3"> </a>  
+        <img class="image" src="../image/Research/image4.png" alt="image4">                                         
+    </div>
+    <p class="text">Here, we have taken "all things bonsai" website's product details as a reference for our product details page. Both pages have similar design as shown in the above picutures. On the allthingsbonsai's product details page, the photo of the product is at the left hand side and the product price and details are the right handside. We also have a similar design with the image of the product on the lefthand side and the product name, price and details on the right handside of the products image. </p>
+
+        <center><h2>Reference 3</h2></center>
+        <div class="image-container">
+            <a href="https://pixabay.com/"> <img class="image" src="../image/Research/image5.png" alt="image5"> </a>
+            <img class="image" src="../image/Research/image6.png" alt="image6">
+        </div>
+        <p class="text">Here, we have taken pixabay homepage as a refernce for our blog page. Both page have simlar interface as shown in above picutures. On the pixabay homepage we can see a picture is set for the background image and search bar is in the middle of the page to search images. On the otherhand we can see our blog page also consists of the similar interface. We also have a picture in the background and a search bar to search for the informationin our blog.  </p>
+
+        <center> <h2>Reference 4</h2></center>
+        <div class="image-container">
+            <a href="https://www.pushengage.com/black-friday/">  <img class="image" src="../image/Research/image7.png" alt="image7"> </a>
+            <img class="image" src="../image/Research/image8.png" alt="image8">
+        </div>
+        <p class="text">Here we have taken pushengage's home page as a reference. Both the pages have similar style, as demonstrated in the picuture above. On the pushengage's home page we can see a message displaying "Get upto 60% of on all are plans" similarly we can see a message displaying " upto 75% Off- All products-On your First Purchase" on our homepage. We added a background image for this container. We also added a shop now button which will redirect you. </p>
+
+        <center> <h2>Reference 5</h2></center>
+        <div class="image-container">
+            <a href="https://brusselsbonsai.com/"> <img class="image" src="../image/Research/image9.png" alt="image9"></a>
+            <img class="image" src="../image/Research/image10.png" alt="image10">
+            </div>
+            <p class="text">For our last reference we took brusselsbonsai's footer reference. In brusselsbonsai's footer, it has provided information about its customer service, bonsai care, nursery information and contact details. On the other hand, our footer consists a logo of our website, contact details, portoflio of each member of the group and a copyrighttag at the end. </p>
+    <footer class="section-p1" style="margin-top: 100px;">
+        <div class="col">
+                <img src="../image/logo/Bonsai Kōjō-1 (2).png" class="logo" alt="">
+        </div>
+            <div class="col">
+                <h4>Contacts</h4>
+                <p><b>Address:</b> <span>Kamal Pokhari, Kathmandu</span></p>
+                <p><b>Phone:</b> <span>+977 9851739281</span></p>
+                <p><b>Email:</b> <span>bonsaikōjōl1c5@gmail.com</span></p>
+            </div>
+        
+            <div class="col">
+                <h4>About us</h4>
+                    <p><a href="AboutUs.html">Portoflio</a></p>
+                    <p><a href="form.html">Feedback Form</a></p>
+            </div>
+        
+            <div class="copyright">
+                <p>&#169; 2023, Bonsai Kōjō </p>
+            </div>
+    </footer>     
+</body>
+</html>

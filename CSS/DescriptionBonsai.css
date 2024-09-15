@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: black;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+}
+
+h3 {
+  font-size: 55px;
+  color: black;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px;
+  color: #465b46;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 5px;
+  color: rgb(255, 255, 255);
+  background-color: #9cd499;
+  border-radius: 9px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(250, 245, 245);
+}
+
+/*------------------------------------------Navigation bar-------------------------------------------------*/
+
+#header {
+  /*creates gap between logo and navigation buttons and adds background color in navigation bar*/
+  display: flex;
+  width: 100%;
+  position: fixed;
+  transition: 1s ease-in-out;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000000;
+  padding: 20px 70px;
+  /*background:#b8d5cd ;*/
+  background-color: #97daae;
+  box-shadow: 0px 9px 20px whitesmoke;
+}
+
+#navbar {
+  /*puts the navigation button in a horizontal line and creats gap between them*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar li {
+  /*removes listing type on the links and creates gap between the navigation button*/
+  list-style-type: none;
+  padding: 0 12px;
+  position: relative;
+}
+
+#navbar li a {
+  /*removes decoration on link and adds ease transition to the nav buttons*/
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #61876e;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  display: block;
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #61876e;
+  position: absolute;
+  bottom: 0px;
+  left: 13px;
+}
+
+/*------------------------------------------slider-------------------------------------------------*/
+#slideshow {
+  width: 95%;
+  height: 370px;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 0px 0px 0px 0.5px gray;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* ---------------------------------------------product-detail---------------------------------  */
+
+.pd-container {
+  position: relative;
+  top: 80px;
+  margin: 0 10%;
+}
+
+.contain {
+  /*This is the section where the product detail show's  */
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.pd-img {
+  flex: 0 0 30%;
+  position: relative;
+  top: 30%;
+  margin: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 1px solid rgb(212, 209, 209);
+  border-radius: 10px;
+}
+
+.pd-img .bonsai-img {
+  height: 481px;
+  width: 100%;
+}
+
+.pd-img img {
+  height: 481px;
+}
+
+.pd-img .sc-icon {
+  height: 41.6px;
+  cursor: pointer;
+}
+
+.pd-info {
+  width: 60%;
+  margin-left: 64px;
+}
+
+.btn-1 {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 20px 15px;
+  line-height: 1;
+  background-color: rgb(124, 204, 153);
+  font-weight: 800;
+  block-size: auto;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.btn-1:hover {
+  background-color: #818288;
+}
+
+/*-------------------------------------------------------footer-------------------------------------------------------------------*/
+
+footer {
+  display: flex;
+  position: relative;
+  top: 128px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #97daae;
+}
+
+footer .logo {
+  margin-top: 38px;
+  width: 300px;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #465b46;
+}

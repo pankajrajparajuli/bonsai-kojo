@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: black;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+}
+
+h3 {
+  font-size: 55px;
+  color: black;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px;
+  color: #465b46;
+}
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 5px;
+  color: rgb(255, 255, 255);
+  background-color: #9cd499;
+  border-radius: 9px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+body {
+  width: 100%;
+  background-color: rgb(250, 245, 245);
+}
+
+/*------------------------------------------Navigation bar-------------------------------------------------*/
+
+#header {
+  /*creates gap between logo and navigation buttons and adds background color in navigation bar*/
+  display: flex;
+  width: 100%;
+  position: fixed;
+  transition: 1s ease-in-out;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000000;
+  padding: 20px 70px;
+  /*background:#b8d5cd ;*/
+  background-color: #97daae;
+  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+  /*puts the navigation button in a horizontal line and creats gap between them*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar li {
+  /*removes listing type on the links and creates gap between the navigation button*/
+  list-style-type: none;
+  padding: 0 12px;
+  position: relative;
+}
+
+#navbar li a {
+  /*removes decoration on link and adds ease transition to the nav buttons*/
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #61876e;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  display: block;
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #61876e;
+  position: absolute;
+  bottom: 0px;
+  left: 13px;
+}
+
+/*-----------------------------------------------Page info-------------------------------------------------------------*/
+
+#page-info {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-info h2 {
+  font-size: 60px;
+  text-shadow: 0px 1px 2px #bdc5b9;
+}
+
+#page-info p {
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #465b46;
+}
+
+#page-info .i-container {
+  /* justify-content: center; */
+  cursor: pointer;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* margin: auto; */
+}
+
+#page-info .i-box {
+  /* text-align: center; */
+  /* justify-content: center; */
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+#page-info .i-box {
+  padding: 10px 10px 10px 10px;
+  box-shadow: 4px 4px 8px rgb(127, 131, 127);
+  border: 1px solid rgb(190, 186, 186);
+  transition: 0.25s linear;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  height: 250px;
+  min-height: 250px;
+  min-width: 500px;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s linear;
+}
+
+#page-info .i-box:hover {
+  padding: 10px 10px 10px 10px;
+  box-shadow: 4px 4px 10px rgb(127, 131, 127);
+  border: 1px solid rgb(190, 186, 186);
+  transition: 0.25s linear;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  height: 250px;
+  min-height: 250px;
+  min-width: 500px;
+  width: 78%;
+  background-color: rgb(255, 255, 255);
+}
+
+#page-info .i-container .i-box .aboutus img {
+  height: 230.88px;
+  padding-right: 32px;
+}
+#page-info .i-container .i-box .i-name {
+  padding-top: 10px;
+  color: black;
+}
+#page-info .i-container .i-box .i-desc {
+  padding-top: 10px;
+  color: rgb(157, 155, 155);
+  text-align: left;
+}
+#page-info .i-box button {
+  margin-top: 10px;
+}
+
+/*-------------------------------------------------------footer-------------------------------------------------------------------*/
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #97daae;
+  padding-top: 30px;
+}
+
+footer .logo{
+  margin-top: 38px;
+  width:300px
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4{
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+footer p{
+  font-size: 16px ;
+  margin: 10px;
+  color: #465b46;
+}
+
+footer a{
+  font-size: 16px ;
+  text-decoration: none;
+  color: #465b46;
+}
+
+footer .copyright{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: px;
+}
